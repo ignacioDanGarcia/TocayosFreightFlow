@@ -15,8 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('HomeTffApp.urls')), #en el primer parametro no le agrego nada para no manchar el link, en las demas apps es recomendable
+    
+    # aca agregar maas vistas de otras apps
 ]
