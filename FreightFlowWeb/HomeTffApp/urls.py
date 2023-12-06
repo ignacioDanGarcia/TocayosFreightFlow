@@ -2,12 +2,13 @@ from django.urls import path
 
 
 from HomeTffApp import views
+app_name = 'HomeTffApp' 
 
 urlpatterns = [
     path('', views.home, name="Home"),
-    path('product', views.home, name="Product"),
-    path('company', views.home, name="Company"),
-    path('get_started', views.home, name="Get started"),
+    path('product/', views.product, name="Product"),
+    path('company/', views.company, name="Company"),
+    path('get_started/', views.get_started, name="Get started"),
 ]
 
 """
