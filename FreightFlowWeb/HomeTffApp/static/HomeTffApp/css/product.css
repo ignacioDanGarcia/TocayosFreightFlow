@@ -11,6 +11,8 @@ section {
     display: grid;
     place-items: center;
     padding-bottom: 80px; /* Ajusta este valor según la altura de tu footer */
+    overflow: auto;
+    height: fit-content;
 }
 .section-heading {
     display: flex;
