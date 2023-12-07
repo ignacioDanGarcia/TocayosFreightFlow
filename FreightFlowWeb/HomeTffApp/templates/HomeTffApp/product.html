@@ -1,0 +1,74 @@
+{% extends "HomeTffApp/base.html"%}
+
+{% load static %}
+
+{% block content %}
+<link href="{% static 'HomeTffApp/css/product.css' %}" rel="stylesheet">
+
+<!-- explicar cómo funciona el producto o servicio para el cliente
+
+cómo funciona nuestra interfaz para llenar un pedido y ver si se puede realizar (indicar cargas con caracteristicas, puerto de salida y llegada, si se necesita camion), el tocayo trcker, forma de pago (que no va a haber),
+que si es un viaje de continente a continente por el atlantico se tarda de 7 a 14 dias, si es el acifico de 15 a 30, etc.
+
+metes fotos
+
+servicio a la izquierda y servicio a la derecha
+-->
+<!-- Section 1: Placing an Order -->
+<section>
+    <div class="row">
+        <h2 class="section-heading">Our services:</h2>
+    </div>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h2>Placing an Order</h2>
+            <p>Our user-friendly interface makes it easy to place an order and determine its feasibility. Simply provide details such as cargo specifications, departure and destination ports, and any specific trucking requirements.</p>
+        </div>
+    </div>
+
+
+
+  <!-- Section 2: Tocayo Tracker -->
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h2>Tocayo trcker</h2>
+            <p>Use our Tocayo Tracker to monitor the progress of your shipment in real-time. Stay informed about its location, estimated arrival time, and any relevant updates.</p> 
+        </div>
+    </div>
+
+  <!-- Section 3: Secure Payment -->
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h2>Secure Payment</h2>
+            <p>Payment is a breeze with our secure and efficient payment gateway. Rest assured, we do not charge any hidden fees, providing a straightforward and trustworthy transaction experience.</p>
+        </div>
+    </div>
+
+
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h2>Customer Support</h2>
+            <p>Our dedicated customer support team is available around the clock to assist you. Whether you have inquiries about your shipment, need assistance with the ordering process, or have any concerns, we're here to help. Contact us via phone, email, or live chat for prompt and reliable support.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+{% endblock %}
