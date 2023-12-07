@@ -3,16 +3,62 @@
 {% load static %}
 
 {% block content %}
-
+<link href="{% static 'HomeTffApp/css/company.css' %}" rel="stylesheet">
 
 <!-- explicar cómo funciona la empresa y la app que controla, asigna cargas, contenedores y barcos,
     como se calculan los precios
 
-
-
+    About us
+    Our story
+    Meet the team
+    Behind the Scenes: Understanding Our App's Role in Load and Container Management
     boton de TRY IT
 -->
-
-
+<section>
+<div class="company">
+    
+    <h4>About us</h4>
+    <p>Welcome to Tocayos Freight Flow, where our journey begins with a passion for revolutionizing the logistics industry. Our story is woven with a commitment to excellence, sustainability, and customer satisfaction.</p>
+    <br><br>
+    <h4>Our story</h4>
+    <p>In the heart of our operation is a team dedicated to transforming the way goods move across the globe. Inspired by the challenges of modern logistics, Tocayos Freight Flow was founded with a vision to streamline shipping processes, enhance transparency, and deliver unparalleled service.
+        <br><br>
+        Starting as a small venture driven by a handful of logistics enthusiasts, we've grown into a dynamic force in the industry. Our success is rooted in a relentless pursuit of innovation, embracing cutting-edge technologies, and nurturing a culture of collaboration.
+        <br><br>
+        As we continue to expand, our focus remains on providing efficient, eco-friendly, and reliable shipping solutions. Our commitment to sustainability guides our every decision, from optimizing transportation routes to adopting eco-friendly technologies.
+        <br><br>
+        At Tocayos Freight Flow, we believe in the power of partnerships. Whether you're a global corporation or a local business, we are dedicated to creating a seamless experience tailored to your unique shipping needs.
+        <br><br>
+        Join us on our journey as we redefine logistics, one shipment at a time.</p>
+    
+</div>
+</section>
+<div class="secbelow" id="secbelow">
+    <h2>Meet the team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img src="{% static "HomeTffApp/img/fotoIgnacioDanGarcia.png" %}" class="perfil-image">
+                </div>
+                <h2>Ignacio Daniel Garcia</h2>
+                <p>A versatile software engineer with expertise in Python, PL/SQL, Java, and C, currently contributing valuable skills and insights at NTT DATA LATAM. Specializing in the development of robust and efficient software solutions, bringing a deep knowledge of agile methodologies, showcasing proficiency in implementing Scrum and other agile practices for project delivery. His capabilities extend to effective collaboration within multidisciplinary teams, rapid adaptation to changing requirements, and meeting tight deadlines. Well-versed in designing and implementing scalable, high-performance solutions, maintaining a results-oriented approach and a strong work ethic. With a passion for continuous learning and constant improvement, always exploring new technologies and best practices to optimize software development.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img src="{% static "HomeTffApp/img/fotoIgnacioNicoGar.png" %}" class="perfil-image">
+                </div>
+                <h2>Ignacio Nicolas Garcia</h2>
+                <p>A second-year Systems Informatics student at UTN, adept at both structured and object-oriented programming languages, including C, C++, Java, Python, HTML, CSS, and Javascript. Demonstrates analytical prowess, adaptability to emerging technologies, and applies SOLID principles. Knowledgeable in design patterns and experienced with PostgreSQL for relational databases. Aspiring to contribute skills and collaborate on impactful software development projects.</p>
+            </div>
+        </div>
+        
+    </div>
+    <h2>Behind the Scenes: Understanding Our App's Role in Load and Container Management</h2>
+    <p>Work in progress (WIP)</p>
+    <a href="#" id="btn">Try it out</a>
+</div>
 
 {% endblock %}
