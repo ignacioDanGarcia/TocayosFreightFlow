@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-mr(bmd(5y5r5wj#8qjo=5$xjl*pa+1n8u_qgv%^a)^og6ocv1i'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG","False").lower() == "true"
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
 
 
 # Application definition
@@ -76,15 +76,13 @@ WSGI_APPLICATION = 'FreightFlowWeb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '44G2GcCG2AFa324aGdD5E1aaA*BG2daF',
-        'HOST': 'viaduct.proxy.rlwy.net',
-        'PORT': '51485',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
     }
 }
-DATABASES['default'] = dj_database_url.parse('postgres://tocayosfreightflow_user:TWTGrT9yF932ShVw3VVncjrCk6QW0RKF@dpg-clpl9np46foc73dbka70-a.oregon-postgres.render.com/tocayosfreightflow')
+
+daatabase_url = os.environ.get("DATABASE_URL")
+DATABASES['default'] = dj_database_url.parse(daatabase_url)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
