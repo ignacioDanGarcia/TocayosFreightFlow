@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import dj_database_url
 from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mr(bmd(5y5r5wj#8qjo=5$xjl*pa+1n8u_qgv%^a)^og6ocv1i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG","False").lower() == "true"
 
 ALLOWED_HOSTS = ['*']
 
@@ -84,7 +84,7 @@ DATABASES = {
         'PORT': '51485',
     }
 }
-
+DATABASES['default'] = dj_database_url.parse('postgres://tocayosfreightflow_user:TWTGrT9yF932ShVw3VVncjrCk6QW0RKF@dpg-clpl9np46foc73dbka70-a.oregon-postgres.render.com/tocayosfreightflow')
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
