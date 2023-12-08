@@ -12,3 +12,6 @@ def company(request):
 
 def get_started(request):
     return render(request, "HomeTffApp/get_started.html")
+
+def paso_uno(request):
+    return render(request, "HomeTffApp/paso_uno.html")

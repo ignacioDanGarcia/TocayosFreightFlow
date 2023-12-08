@@ -1,0 +1,88 @@
+section {
+    min-height: 100vh; /* Cambiado a min-height para asegurar que ocupe al menos 100vh */
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-bottom: 80px; /* Ajusta este valor según la altura de tu footer */
+    overflow: auto;
+    height: fit-content;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#fff 50%, #05042e 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #05042e;
+    margin: 1em 0;
+}
+
+p {
+    color: #bbb;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+.icon-wrapper {
+    background-color: #05042e;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+.card .btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-top: 20px;
+    border-radius: 40px;
+    background: #fff;
+    color: #05042e;
+    font-size: 1.5em;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-position: 0 100%;
+}
+
+.card:hover .icon-wrapper {
+    background-color: #fff;
+    color: #05042e;
+}
+
+.card:hover h2 {
+    color: #fff;
+}
+
+.card:hover p {
+    color: #fff;
+}
+
