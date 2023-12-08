@@ -1,0 +1,61 @@
+{% extends "HomeTffApp/base.html"%}
+
+{% load static %}
+
+{% block content %}
+<link href="{% static 'HomeTffApp/css/get_started.css' %}" rel="stylesheet">
+<!-- 
+    basicamente solicitar un pedido
+
+    botón de "easy envio"
+        hago en primer lugar dos wrapper para origen y destino
+
+    botón de "tocayo trackr con id de pedido"
+
+    
+
+-->
+<section>
+    
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h2>Tocayo trcker</h2>
+                <p>Try our tocayo trcker here. You'll want to have your order ID on hand.</p> 
+                <a href="#">
+                    <button class="btn">Use</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <h2>Easy ship</h2>
+                <p>Experience lightning-fast shipping with us! Our express delivery ensures your order reaches you in no time. Enjoy the convenience of swift and efficient service, making your shopping experience seamless. Get ready for quick, hassle-free deliveries!</p> 
+                <a href="{% url 'HomeTffApp:Paso uno' %}">
+                    <button class="btn">Use</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

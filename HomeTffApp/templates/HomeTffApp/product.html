@@ -1,0 +1,128 @@
+{% extends "HomeTffApp/base.html"%}
+
+{% load static %}
+
+{% block content %}
+<link href="{% static 'HomeTffApp/css/product.css' %}" rel="stylesheet">
+
+<!-- explicar cómo funciona el producto o servicio para el cliente
+
+cómo funciona nuestra interfaz para llenar un pedido y ver si se puede realizar (indicar cargas con caracteristicas, puerto de salida y llegada, si se necesita camion), el tocayo trcker, forma de pago (que no va a haber),
+que si es un viaje de continente a continente por el atlantico se tarda de 7 a 14 dias, si es el acifico de 15 a 30, etc.
+
+metes fotos
+
+servicio a la izquierda y servicio a la derecha
+-->
+
+<section>
+<div class="section-heading">
+        <h3>Our services:</h3>
+</div>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h2>Placing an Order</h2>
+            <p>Our user-friendly interface makes it easy to place an order and determine its feasibility. Simply provide details such as cargo specifications, departure and destination ports, and any specific trucking requirements.</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-ship"></i>
+            </div>
+            <h2>Embark on a Journey with Our Specialized Ships!</h2>
+            <p>We offer two types of ships: one designed for basic containers and another versatile vessel capable of transporting any type of cargo. Your merchandise is always in the best hands!</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-boxes-packing"></i>
+            </div>
+            <h2>Variety of Containers for Every Need</h2>
+            <p>From the standard 20-foot basic container to the innovative "Open Top" for special loads. Our range of containers adapts to all types of goods, ensuring maximum safety and efficiency.</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h2>Tocayo trcker</h2>
+            <p>Use our Tocayo Tracker to monitor the progress of your shipment in real-time. Stay informed about its location, estimated arrival time, and any relevant updates.</p> 
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h2>Safety at Sea is Our Top Priority</h2>
+            <p>We implement rigorous safety measures: maximum load control, container-specific design, and the introduction of smart sails to save fuel. Your cargo will be protected on every voyage.</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h2>Calculate the Price with Transparency and Efficiency</h2>
+            <p>With our clear and detailed pricing system, you will never be surprised. We consider the type of container, the transported load, and, if necessary, an additional fee for the use of "Open Top" containers. Transparency and efficiency in every transaction!</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h2>Effortless Transportation Beyond Ports</h2>
+            <p>For clients without personal transportation, our dedicated trucking service ensures hassle-free, door-to-door delivery. Simply opt for our service, and we'll take care of the rest! Our fleet of trucks is ready to transport your container securely and efficiently. We offer this convenient service at a fixed cost of $20,000 per trip, providing a cost-effective solution for your transportation needs.</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h2>Secure Payment</h2>
+            <p>Payment is a breeze with our secure and efficient payment gateway. Rest assured, we do not charge any hidden fees, providing a straightforward and trustworthy transaction experience.</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h2>Customer Support</h2>
+            <p>Our dedicated customer support team is available around the clock to assist you. Whether you have inquiries about your shipment, need assistance with the ordering process, or have any concerns, we're here to help. Contact us via phone, email, or live chat for prompt and reliable support.</p>
+        </div>
+    </div>
+
+    
+    <!--ORDEN DE LAS CARTAS
+        order
+        contar los tipos de barcos
+        contar los tipos de contenedores
+        Tracker
+        agregar carta sobre las medidas de seguridad de los barcos
+        agregar carta sobre la opcion de usar camiones
+        payment
+        support
+        explicar cual es la logica mediante la cual les cobramos-->
+</div>
+</section>
+
+
+{% endblock %}
