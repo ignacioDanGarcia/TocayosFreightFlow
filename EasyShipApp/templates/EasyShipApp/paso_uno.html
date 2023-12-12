@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<link href="{% static 'HomeTffApp/css/paso_uno.css' %}" rel="stylesheet">
+<link href="{% static 'EasyShipApp/css/paso_uno.css' %}" rel="stylesheet">
 <!-- 
     LOS PASOS TIENEN QUE IR EN OTRA APP DE DJANGO
 
@@ -19,8 +19,8 @@
     pero para esto vas a necesitar funcional la base de datos
 -->
 <section>
-    <img src="{% static "HomeTffApp/img/container.png" %}" id="container">
-    <h2>Step 1 (out of 4)</h2>
+    <img src="{% static "EasyShipApp/img/container.png" %}" id="container">
+    <h2>Step 1 (out of 4). Adress information</h2>
     <form action="">
         <div class="colwrapp">
             <div class="wrapper">
@@ -72,7 +72,7 @@
                     <input type="text" placeholder="Email" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                <button type="submit" class="btn">Continue</button>
+                <a href="{% url 'EasyShipApp:Paso dos' %}" type="submit" class="btn">Continue</a>
             </div>
             
         </div>

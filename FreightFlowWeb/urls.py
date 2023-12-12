@@ -20,6 +20,6 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('HomeTffApp.urls', namespace='HomeTffApp')), #en el primer parametro no le agrego nada para no manchar el link, en las demas apps es recomendable
-    
+    path('EasyShipApp/', include('EasyShipApp.urls', namespace='EasyShipApp')),
     # aca agregar maas vistas de otras apps
 ]
